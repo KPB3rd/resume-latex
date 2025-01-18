@@ -28,8 +28,8 @@
 % you're using pdflatex or xelatex/lualatex
 \ifxetexorluatex
   % If using xelatex or lualatex:
-  \setmainfont{Roboto Slab}
-  \setsansfont{Lato}
+  %\setmainfont{Roboto Slab}
+  %\setsansfont{"Lato"}
   \renewcommand{\familydefault}{\sfdefault}
 \else
   % If using pdflatex:
@@ -38,6 +38,7 @@
   % \usepackage{sourcesanspro}
   \renewcommand{\familydefault}{\sfdefault}
 \fi
+
 
 % Change the colours if you want to
 \definecolor{SlateGrey}{HTML}{2E2E2E}
@@ -79,7 +80,7 @@
 % \input{pubs-num}
 
 %% sample.bib contains your publications
-\addbibresource{sample.bib}
+\addbibresource{refs.bib}
 
 \begin{document}
 \name{Kenny Bowers}
@@ -133,30 +134,26 @@
 
 \cvevent{Senior Autonomy Engineer - Motion Planning}{Anduril Industries}{Oct 2020 -- Current}{Atlanta, GA}
 \begin{itemize}
-\item Began employment at Area-I (Anduril's first major acquisition a few months later), and owned the motion planning capabilities of Altius, a fixed-wing tube-launched drone.
-\item Initiated the transition to being a company-wide Motion Planning SME, driving adoption of Altius' fixed-wing algorithms to other Anduril products which improved delivery time, reliability, and minimized risk for multiple programs.
-\item Directed the algorithm design, scope, and C++ implementation for various fixed-wing robotics projects, generalizing where possible to enable upcoming projects to quickly deliver new features with minimal code rearchitecture.
-\item Established team practices for consistent unit testing, continuous integration, code style, and interview process as the Atlanta software team grew from six to over thirty engineers.
-\item Mentored product teams on design decisions to keep project scope feasible and how to minimize risk by designing the simple, reliable solution driven by first principles and domain knowledge.
+\item Began employment at Area-I (Anduril's first major acquisition a few months later) owning the motion planning capabilities of Altius, a fixed-wing tube-launched drone. This included researching, implementing, and benchmarking novel and state-of-the-art algorithms being delivered to multiple critical programs.
+\item Initiated the transition to being a company-wide Motion Planning SME, driving adoption of Altius' algorithms to other Anduril products which improved delivery time, reliability, and minimized risk for multiple programs.
+\item Engineering Lead on multiple programs, breaking down large problems into tasks for the various subteams involved. My goal is to first define MVP system interfaces that enable iteration and contained maturation for each component as you receive feedback from testing and demonstration.
 \end{itemize}
 
 \divider
 
 \cvevent{Autonomy Research Engineer}{Georgia Tech Research Institute}{July 2017 -- Oct 2020}{Atlanta, GA}
 \begin{itemize}
-\item Scoped the concept and led the solution design and C++ implementation of real-time motion planning algorithms for multi-agent aerial systems, delivering to various DoD customers on high-profile programs.
-\item Published three conference papers on fundamental research in bio-inspired swarm algorithms for distributed autonomous multi-robot teams.
+\item Scoped the design and C++ implementation of real-time motion planning algorithms for multi-agent aerial systems, delivering to various DoD customers on high-profile programs. This involved decomposing problems and assigning tasks to the team.
+\item Repeatedly demonstrated taking vague or near-zero requirements from customers, and proposing a scoped problem to investigate. One project resulted in three publications on fundamental research in bio-inspired swarm algorithms in a one year span, and another increased budget by an order of magnitude due to strong interest by the customer.
 \end{itemize}
 
 \divider
 
 \cvevent{Software Engineer}{Boeing Research and Technology}{June 2014 -- July 2017}{Charleston, SC}
 \begin{itemize}
-\item Published four patents on robotic control and airplane surface inspection.
-\item Developed algorithms for robot arm path planning and inkjet head control to enable painting artwork directly onto 3D aircraft surfaces. The project was showcased during a POTUS visit.
-\item Designed a real-time hardware/software solution for inspecting the fuselage for micrometer defects during manufacturing. This included localizing the scanners to the surface of the airplane in order to display defect locations to the operator.
-\item Led the development of a real-time system to synchronize and calibrate 60+ cameras and sensors across multiple PCs and microcontrollers.
-\item Managed and designed the Clemson University ECE Senior design project sponsored by Boeing.
+\item Developed algorithms and simulations for robot arm path planning and inkjet control to enable painting artwork directly onto contoured aircraft surfaces. The project was showcased during a POTUS visit, and resulted in four patents on robotic control and airplane surface inspection as it neared production-trial readiness.
+\item Implemented surface inspection tooling of airplane surfaces to geometrically associate robot arm position and lidar sensor readings to compare against the expected results. This flagged micrometer anomalies and would warn the operator, detecting defects that would have been missed.
+\item Volunteered to manage the collaboration between Boeing and Clemson University to sponsor Clemson’s ECE Senior Project. This included designing the project challenge for the students and judging the results at the demonstration.
 \end{itemize}
 
 % \cvsection{Projects}
